@@ -15,3 +15,21 @@ pipeline {
     }
   }
 }
+
+pipeline {
+  agent any
+
+  stages {
+    stage ('test') {
+      steps {
+        sh "echo Run a command"
+     }
+   }
+    stage ('deploy') {
+      steps {
+        sh "echo Run a command"
+      }
+    
+    }
+  }
+}
